@@ -39,6 +39,9 @@ function func(){
     }
      
     if(!(validName.style.display == 'block' || validEmail.style.display == 'block' || validPhone.style.display == 'block' || validMessage.style.display == 'block'  )){
-        window.location.replace('http://127.0.0.1:5500/message.html')
+       a =  window.location.href
+       b = a.concat('','message.html')
+       window.location.replace(b)
+
     }
 }
